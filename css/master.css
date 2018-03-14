@@ -29,12 +29,43 @@
   to {
     background-position: 0 0;
   }
-
+}
+@keyframes neon-lights {
+  0% {
+    color: #f17373;
+  }
+  20% {
+    color: #e023238c;
+  }
+  35% {
+    color: #e02323;
+  }
+  50% {
+    color: #e0232324;
+  }
+  65% {
+    color: white;
+  }
 }
 
-body {
-  /*background-color: skyblue;*/
+@font-face {
+  font-family: neon;
+  src: url(../new-typography_monoton/Monoton-Regular.ttf);
 }
+
+.text {
+  font-family: neon;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #f17373;
+  font-size: 3.5em;
+  margin: -5% 3%;
+  text-shadow: 3px 3px 5px blue;
+  animation: neon-lights 60s linear infinite;
+}
+
+
 .container {
   overflow: hidden;
   position: relative;
@@ -44,47 +75,50 @@ body {
   background-size: cover;
   background-position: 0 0;
   background-repeat: repeat-x;
-  animation: bg 15s linear infinite;
+  animation: bg 10s linear infinite;
 }
 .cloud1 {
   position: absolute;
   height: 400px;
   width: 600px;
-  animation: clouds-move 20s linear infinite;
+  animation: clouds-move 30s ease-in infinite;
 }
 .cloud2 {
   position: absolute;
   top: 150px;
   height: 400px;
   width: 600px;
-  animation: clouds-move 25s linear infinite;
+  animation: clouds-move 36s linear infinite;
+  z-index: 8;
 }
 .cloud3 {
   position: absolute;
   height: 400px;
   width: 600px;
-  animation: clouds-move 22s linear infinite;
+  animation: clouds-move 28s linear infinite;
 }
 .cloud4 {
   position: absolute;
   top: 170px;
   height: 300px;
   width: 700px;
-  animation: clouds-move 15s linear infinite;
+  animation: clouds-move 24s linear infinite;
+  z-index: 7;
 }
 .cloud5 {
   position: absolute;
   top: 100;
   height: 400px;
   width: 600px;
-  animation: clouds-move 33s linear infinite;
+  animation: clouds-move 42s linear infinite;
 }
 .cloud6 {
   position: absolute;
   top: 140px;
   height: 450px;
   width: 500px;
-  animation: clouds-move 17s linear infinite;
+  z-index: 6;
+  animation: clouds-move 26s linear infinite;
 }
 .plane {
   position: absolute;
@@ -96,386 +130,47 @@ body {
 }
 .balloon {
   position: absolute;
-  height: 500px;
+  height: 200px;
   width: auto;
-  animation: balloons-move 120s linear infinite;
+  animation: balloons-move 120s ease-in infinite;
 }
-.balloon2 {
-  position: absolute;
-  z-index: -4;
-  height: 500px;
-  width: auto;
-  left: 1130px;
-  animation: balloons-move 140s linear infinite;
-}
-.balloon3 {
-  position: absolute;
-  z-index: -5;
-  height: 500px;
-  width: auto;
-  left: 1000px;
-  animation: balloons-move 150s linear infinite;
-}
-.balloon4 {
-  position: absolute;
-  z-index: -8;
-  height: 500px;
-  width: auto;
-  left: 700px;
-  animation: balloons-move 50s linear infinite;
-}
-.balloon5 {
-  position: absolute;
-  height: 500px;
-  width: auto;
-  left: 600px;
-  animation: balloons-move 52s linear infinite;
-}
-.balloon6 {
-  position: absolute;
-  z-index: -6;
-  height: 500px;
-  width: auto;
-  left: 700px;
-  animation: balloons-move 110s linear infinite;
-}
-.balloon7 {
-  position: absolute;
-  z-index: -6;
-  height: 500px;
-  width: auto;
-  left: 700px;
-  animation: balloons-move 41s linear infinite;
-}
-.balloon8 {
-  position: absolute;
-  z-index: -8;
-  height: 500px;
-  width: auto;
-  left: 700px;
-  animation: balloons-move 39s linear infinite;
-}
-.balloon9 {
-  position: absolute;
-  height: 500px;
-  width: auto;
-  left: 700px;
-  animation: balloons-move 41s linear infinite;
-}
+
 .clouds img {
   height: 100%;
   width: 100%;
 }
 .mountains {
-  z-index: -2;
   width: 100%;
   height: auto;
   position: absolute;
   bottom: 50px;
   left: 3%;
+  display: flex;
+  justify-content: center;
 }
-#pic {
+#island {
+    width: 385px;
+    z-index: 4;
+}
+
+#bored-boy {
   position: absolute;
   width: 150px;
   height: auto;
-  bottom: 180px;
-  left: 1060px;
-}
-#gif {
-  position: absolute;
-  width: 50px;
-  height: auto;
-  bottom: 200px;
-  left: 1000px;
-}
-#gif2 {
-  position: absolute;
-  width: 70px;
-  height: auto;
-  bottom: 200px;
-  left: 950px;
-}
-#pic2 {
-  position: absolute;
-  width: 100px;
-  height: auto;
-  bottom: 230px;
-  left: 570px;
-}
-#pic3 {
-  position: absolute;
-  width: 110px;
-  height: auto;
-  bottom: 188px;
-  left: 620px;
-}
-.balloon-holder {
-  display: flex;
-  flex-direction: column;
-}
-.box {
-  position: relative;
-}
-#balloon {
-  width: 400px;
-  height: auto;
-}
-#dino {
-  position: absolute;
-  z-index: -1;
-  width: 350px;
-  height: 400px;
-  top: -10px;
-  left: 105px;
-}
-#net {
-  filter: brightness(-100%);
-  border-radius: 50%;
-  position: absolute;
+  bottom: 48%;
+  left: 50%;
   z-index: 5;
-  width: 460px;
-  height: 460px;
-  top: -20px;
-  left: 20px;
-}
-#balloon2 {
-  width: 100px;
-  height: auto;
-}
-#dino2 {
-  position: absolute;
-  z-index: -6;
-  width: 50px;
-  height: 60px;
-  top: -10px;
-  left: 105px;
-}
-#net2 {
-  filter: brightness(-100%);
-  border-radius: 40%;
-  position: absolute;
-  z-index: -5;
-  width: 460px;
-  height: 460px;
-  top: -20px;
-  left: 20px;
-}
-#balloon3 {
-  width: 200px;
-  height: auto;
-}
-#dino3 {
-  position: absolute;
-  z-index: -6;
-  width: 50px;
-  height: 100px;
-  top: -10px;
-  left: 105px;
-}
-#net3 {
-  filter: brightness(-100%);
-  border-radius: 50%;
-  position: absolute;
-  z-index: -5;
-  width: 160px;
-  height: 160px;
-  top: -20px;
-  left: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-#balloon4 {
-  width: 200px;
-  height: auto;
+@media screen and (max-width: 900px) {
+  .text {
+    margin-top: 20%;
+    font-size: 1.8em;
+  }
 }
-#dino4 {
-  position: absolute;
-  z-index: -1;
-  width: 50px;
-  height: 100px;
-  top: -10px;
-  left: 105px;
-}
-#net4 {
-  filter: brightness(-100%);
-  border-radius: 50%;
-  position: absolute;
-  z-index: 5;
-  width: 160px;
-  height: 160px;
-  top: -20px;
-  left: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-#balloon5 {
-  width: 200px;
-  height: auto;
-}
-#dino5 {
-  position: absolute;
-  z-index: -1;
-  width: 50px;
-  height: 100px;
-  top: -10px;
-  left: 105px;
-}
-#net5 {
-  filter: brightness(-100%);
-  border-radius: 50%;
-  position: absolute;
-  z-index: 5;
-  width: 160px;
-  height: 160px;
-  top: -20px;
-  left: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-#balloon6 {
-  width: 200px;
-  height: auto;
-}
-#dino6 {
-  position: absolute;
-  z-index: -1;
-  width: 50px;
-  height: 100px;
-  top: -10px;
-  left: 105px;
-}
-#net6 {
-  filter: brightness(-100%);
-  border-radius: 50%;
-  position: absolute;
-  z-index: 5;
-  width: 160px;
-  height: 160px;
-  top: -20px;
-  left: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-#balloon7 {
-  width: 200px;
-  height: auto;
-}
-#dino7 {
-  position: absolute;
-  z-index: -1;
-  width: 50px;
-  height: 100px;
-  top: -10px;
-  left: 105px;
-}
-#net7 {
-  filter: brightness(-100%);
-  border-radius: 50%;
-  position: absolute;
-  z-index: 5;
-  width: 160px;
-  height: 160px;
-  top: -20px;
-  left: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-#balloon8 {
-  width: 200px;
-  height: auto;
-}
-#dino8 {
-  position: absolute;
-  z-index: -1;
-  width: 50px;
-  height: 100px;
-  top: -10px;
-  left: 105px;
-}
-#net8 {
-  filter: brightness(-100%);
-  border-radius: 50%;
-  position: absolute;
-  z-index: 5;
-  width: 160px;
-  height: 160px;
-  top: -20px;
-  left: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-#balloon9 {
-  width: 200px;
-  height: auto;
-}
-#dino9 {
-  position: absolute;
-  z-index: -1;
-  width: 50px;
-  height: 100px;
-  top: -10px;
-  left: 105px;
-}
-#net9 {
-  filter: brightness(-100%);
-  border-radius: 50%;
-  position: absolute;
-  z-index: 5;
-  width: 100px;
-  height: 100px;
-  top: -20px;
-  left: -20px;
+@media screen and (max-width: 450px){
+  .text {
+    margin-top: 25%;
+    font-size: 1.2em;
+  }
 }
