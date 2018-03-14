@@ -11,6 +11,7 @@ _This page is a practice in using CSS animations to render a simple thematic sce
 ### Screenshot:
 ![Screenshot](img/screenshot.gif?raw=true)
 
+
 ## Known Bugs
 
 _Sometimes the floating island doesn't load and our bored protagonist is left spinning in his chair adrift in the sky, which is actually no less nonsensical than when the floating island does load_
@@ -28,3 +29,6 @@ _Primarily HTML & CSS_
 *Available for fair use by all under Creative Commons License*
 
 Copyright (c) 2017 **_Kevin Boyle_**
+
+
+![Screenshot](img/screenshot1aa.png?raw=true)
