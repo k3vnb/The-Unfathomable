@@ -132,7 +132,7 @@
   position: absolute;
   height: 200px;
   width: auto;
-  animation: balloons-move 60s ease-in infinite;
+  animation: balloons-move 120s ease-in infinite;
 }
 
 .clouds img {
@@ -160,4 +160,17 @@
   bottom: 48%;
   left: 50%;
   z-index: 5;
+}
+
+@media screen and (max-width: 900px) {
+  .text {
+    margin-top: 20%;
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 450px){
+  .text {
+    margin-top: 25%;
+    font-size: 1.2em;
+  }
 }
