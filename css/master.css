@@ -132,7 +132,7 @@
   position: absolute;
   height: 200px;
   width: auto;
-  animation: balloons-move 40s ease-in infinite;
+  animation: balloons-move 60s ease-in infinite;
 }
 
 .clouds img {
