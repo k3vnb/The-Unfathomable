@@ -29,8 +29,25 @@
   to {
     background-position: 0 0;
   }
-
 }
+@keyframes neon-lights {
+  0% {
+    color: #f17373;
+  }
+  20% {
+    color: #e023238c;
+  }
+  35% {
+    color: #e02323;
+  }
+  50% {
+    color: #e0232324;
+  }
+  65% {
+    color: white;
+  }
+}
+
 @font-face {
   font-family: neon;
   src: url(../new-typography_monoton/Monoton-Regular.ttf);
@@ -41,11 +58,13 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  color: white;
+  color: #f17373;
   font-size: 3.5em;
   margin: -5% 3%;
   text-shadow: 3px 3px 5px blue;
+  animation: neon-lights 60s linear infinite;
 }
+
 
 .container {
   overflow: hidden;
@@ -70,6 +89,7 @@
   height: 400px;
   width: 600px;
   animation: clouds-move 36s linear infinite;
+  z-index: 8;
 }
 .cloud3 {
   position: absolute;
@@ -83,6 +103,7 @@
   height: 300px;
   width: 700px;
   animation: clouds-move 24s linear infinite;
+  z-index: 7;
 }
 .cloud5 {
   position: absolute;
@@ -96,6 +117,7 @@
   top: 140px;
   height: 450px;
   width: 500px;
+  z-index: 6;
   animation: clouds-move 26s linear infinite;
 }
 .plane {
@@ -118,7 +140,6 @@
   width: 100%;
 }
 .mountains {
-  z-index: -2;
   width: 100%;
   height: auto;
   position: absolute;
@@ -129,6 +150,7 @@
 }
 #island {
     width: 385px;
+    z-index: 4;
 }
 
 #bored-boy {
@@ -137,5 +159,5 @@
   height: auto;
   bottom: 48%;
   left: 50%;
-  z-index: 500;
+  z-index: 5;
 }
