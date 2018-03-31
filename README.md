@@ -6,7 +6,7 @@
 
 ## Description
 
-_This page is a practice in using CSS animations to render a simple thematic scene. Clouds float by, the bored one spins, and the unfathomable is ominous. https://lemurriot.github.io/animation/ ._
+_This page is a practice in using CSS animations to render a simple thematic scene. Clouds float by, the bored one spins, and the unfathomable is ominous. https://lemurriot.github.io/The-Unfathomable/ ._
 
 ### Screenshot:
 ![Screenshot](img/screenshot.gif?raw=true)
