@@ -22,7 +22,7 @@ _Please contact Kevin Boyle at papershack@gmail.com with any questions_
 
 ## Technologies Used
 
-_Primarily HTML & CSS_
+_HTML, CSS, Javascript_
 
 ### License
 
